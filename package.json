@@ -1,0 +1,36 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.0.5",
+    "@storybook/addon-links": "^5.0.5",
+    "@storybook/addons": "^5.0.5",
+    "@storybook/react": "^5.0.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "babel-loader-lerna-cra": "^0.1.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "jest": "^24.5.0",
+    "lerna": "^3.13.1",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-test-renderer": "^16.8.5"
+  },
+  "dependencies": {},
+  "scripts": {
+    "sb-start": "start-storybook -p 6006",
+    "sb-build": "build-storybook",
+    "sb-tree": "tree -C .storybook stories"
+  },
+  "babel-loader-lerna-cra": {
+    "imports": "packages/comp-*/src",
+    "apps":  "packages/*react-app*"
+  }
+}
